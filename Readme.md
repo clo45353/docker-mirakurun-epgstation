@@ -11,7 +11,7 @@
 ## インストール手順
 
 ```sh
-curl -sf https://raw.githubusercontent.com/l3tnun/docker-mirakurun-epgstation/v2/setup.sh | sh -s
+curl -sf https://raw.githubusercontent.com/clo45353/docker-mirakurun-epgstation/v2/setup.sh | sh -s
 cd docker-mirakurun-epgstation
 
 #チャンネル設定
