@@ -33,15 +33,6 @@ thumbnail: '%ROOT%/thumbnail'
 thumbnailSize: 480x270
 thumbnailPosition: 5
 
-excludeSids:
-    - 23610
-    - 1025
-    - 1034
-    - 102
-    - 142
-    - 152
-    - 162
-
 ffmpeg: /usr/local/bin/ffmpeg
 ffprobe: /usr/local/bin/ffprobe
 
