@@ -15,13 +15,16 @@ mysql:
     password: epgstation
     database: epgstation
 
+needToReplaceEnclosingCharacters: true
+
 epgUpdateIntervalTime: 10
 
 conflictPriority: 1
 recPriority: 2
 
-recordedFormat: '%YEAR%年%MONTH%月%DAY%日%HOUR%時%MIN%分%SEC%秒-%TITLE%'
-recordedFileExtension: .m2ts
+recordedFormat: '%YEAR%%MONTH%%DAY%%HOUR%%MIN%-%TITLE% -%HALF_WIDTH_CHNAME%'
+recordedFileExtension: .ts
+recordedTmp: '%ROOT%/recorded/recording'
 recorded:
     - name: recorded
       path: '%ROOT%/recorded'
@@ -29,6 +32,15 @@ recorded:
 thumbnail: '%ROOT%/thumbnail'
 thumbnailSize: 480x270
 thumbnailPosition: 5
+
+excludeSids:
+    - 23610
+    - 1025
+    - 1034
+    - 102
+    - 142
+    - 152
+    - 162
 
 ffmpeg: /usr/local/bin/ffmpeg
 ffprobe: /usr/local/bin/ffprobe
